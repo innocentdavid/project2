@@ -23,7 +23,7 @@ class Listings(models.Model):
 
 class Bid(models.Model):
     id = models.IntegerField(primary_key=True)
-    listing_id = models.ForeignKey(Listings, on_delete=models.SET_NULL, null=True, blank=True)
+    listing_id = models.ForeignKey(Listings, on_delete=models.CASCADE, null=True, blank=True)
     user_id = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
     dateTime = models.DateTimeField(auto_now_add=True)
 
@@ -40,5 +40,8 @@ class Category(models.Model):
 
 class Comments(models.Model):
     id = models.IntegerField(primary_key=True)
-    listing_id = models.IntegerField(blank=False)
+    listing_id = models.ForeignKey(Listings, on_delete=models.SET_NULL, null=True, blank=True)
     dateTime = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return str(self.id)
