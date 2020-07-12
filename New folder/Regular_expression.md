@@ -1,6 +1,6 @@
-# Regular Expression HOWTO
+# Regular Expression
 
-### Author A.M. Kuchling [<amk@amk.ca>](href="mailto:amk@amk.ca")
+##### Author A.M. Kuchling [<amk@amk.ca>](href="mailto:amk@amk.ca")
 
 <br>
 ### Abstract

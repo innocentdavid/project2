@@ -12,7 +12,6 @@
   <link href="{% static 'encyclopedia/styles.css' %}" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="{% static 'encyclopedia/script.js' %}"></script>
 </head>
 <body>
   <div class="row">
@@ -22,7 +21,8 @@
         <input class="search" type="text" name="q" placeholder="Search Encyclopedia">
       </form>
       <div>
-        <a href="{% url 'index' %}">Home</a>
+        <!-- <a href="{% url 'index' %}">Home</a> -->
+        <a href="/">Home</a>
       </div>
       <div>
         <a href="/createNewPage">Create New Page</a>
