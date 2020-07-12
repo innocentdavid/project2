@@ -1,0 +1,19 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+Encyclopedia
+{% endblock %}
+
+{% block body %}
+<h1>All Pages</h1>
+<div class="container-fliud">
+  <div class="row">
+    {% for entry in entries %}
+    <ul class="col-12">
+      <li><a href="/wiki/{{ entry }}">{{ entry }}</a></li>
+    </ul>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock %}

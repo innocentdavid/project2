@@ -1,0 +1,55 @@
+* {
+  font-family: Arial;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  background-color: white;
+}
+
+code {
+  white-space: pre;
+}
+
+h1 {
+  margin-top: 0px;
+  padding-top: 20px;
+}
+
+textarea {
+  height: 50vh;
+  width: 100%;
+}
+#createPageInp {
+  width: 90%;
+}
+
+.main {
+  padding: 10px 70px;
+  min-height: 100vh;
+}
+
+.search {
+  width: 100%;
+  font-size: 1em;
+  line-height: 15px;
+}
+
+.sidebar {
+  background-color: #f0f0f0;
+  padding: 20px 40px;
+}
+
+.sidebar h2 {
+  margin-top: 5px;
+}
+
+@media (min-width: 767px) {
+  .sidebar {
+    height: 100vh;
+  }
+}
